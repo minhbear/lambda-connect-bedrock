@@ -1,0 +1,18 @@
+service: lambda-connect-bedrock
+
+provider:
+  name: aws
+  runtime: python3.12
+  region: ap-southeast-1
+  timeout: 60
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action: 
+            - "bedrock:InvokeModel"
+          Resource: "*"
+
+functions:
+  connect_bedrock:
+    handler: handler.connect_bedrock
