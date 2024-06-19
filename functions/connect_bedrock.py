@@ -1,3 +1,8 @@
+import json
+import boto3
+
+bedrock_client = boto3.client('bedrock')
+
 def connect_bedrock(event, context):
   print("The first function has been invoked!!")
   return {
