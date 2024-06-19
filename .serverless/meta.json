@@ -14,7 +14,7 @@
       "provider": {
         "name": "aws",
         "runtime": "python3.12",
-        "region": "ap-southeast-1",
+        "region": "us-east-1",
         "timeout": 60,
         "iam": {
           "role": {
@@ -202,7 +202,7 @@
                   "S3Bucket": {
                     "Ref": "ServerlessDeploymentBucket"
                   },
-                  "S3Key": "serverless/lambda-connect-bedrock/dev/1718732171319-2024-06-18T17:36:11.319Z/lambda-connect-bedrock.zip"
+                  "S3Key": "serverless/lambda-connect-bedrock/dev/1718811509485-2024-06-19T15:38:29.485Z/lambda-connect-bedrock.zip"
                 },
                 "Handler": "handler.connect_bedrock",
                 "Runtime": "python3.12",
@@ -349,14 +349,14 @@
         }
       }
     },
-    "serviceRawFile": "service: lambda-connect-bedrock\n\nprovider:\n  name: aws\n  runtime: python3.12\n  region: ap-southeast-1\n  timeout: 60\n  iam:\n    role:\n      statements:\n        - Effect: Allow\n          Action: \n            - \"bedrock:InvokeModel\"\n          Resource: \"*\"\n\nfunctions:\n  connect_bedrock:\n    handler: handler.connect_bedrock",
+    "serviceRawFile": "service: lambda-connect-bedrock\n\nprovider:\n  name: aws\n  runtime: python3.12\n  region: us-east-1\n  timeout: 60\n  iam:\n    role:\n      statements:\n        - Effect: Allow\n          Action: \n            - \"bedrock:InvokeModel\"\n          Resource: \"*\"\n\nfunctions:\n  connect_bedrock:\n    handler: handler.connect_bedrock",
     "command": [
       "deploy"
     ],
     "options": {},
     "error": null,
     "params": {},
-    "machineId": "5bbc05d990876d4f6a060f6ef9b4c7a1",
+    "machineId": "67eac63484ba1d7694179d72c57305e4",
     "accessKeyV2": "<REDACTED>",
     "accessKeyV1": "<REDACTED>",
     "orgId": "8c6f1056-448b-463c-a7e3-596436be8099",
@@ -378,20 +378,20 @@
     "serviceProviderAwsAccountId": "339713038596",
     "versionSf": "4.1.4",
     "serviceProviderAwsCfStackName": "lambda-connect-bedrock-dev",
-    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:ap-southeast-1:339713038596:stack/lambda-connect-bedrock-dev/13ff8840-2d97-11ef-9d52-062b6f358b6b",
-    "serviceProviderAwsCfStackCreated": "2024-06-18T17:20:37.155Z",
-    "serviceProviderAwsCfStackUpdated": "2024-06-18T17:36:25.680Z",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:339713038596:stack/lambda-connect-bedrock-dev/fc2c6010-2e51-11ef-a21b-12cf815d71f9",
+    "serviceProviderAwsCfStackCreated": "2024-06-19T15:38:33.058Z",
+    "serviceProviderAwsCfStackUpdated": "2024-06-19T15:40:02.024Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "ConnectUnderscorebedrockLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-1:339713038596:function:lambda-connect-bedrock-dev-connect_bedrock:1",
+        "OutputValue": "arn:aws:lambda:us-east-1:339713038596:function:lambda-connect-bedrock-dev-connect_bedrock:1",
         "Description": "Current Lambda function version",
         "ExportName": "sls-lambda-connect-bedrock-dev-ConnectUnderscorebedrockLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "ServerlessDeploymentBucketName",
-        "OutputValue": "lambda-connect-bedrock-de-serverlessdeploymentbuck-mkm9avuuaunt",
+        "OutputValue": "lambda-connect-bedrock-de-serverlessdeploymentbuck-tfkg5btnemnp",
         "ExportName": "sls-lambda-connect-bedrock-dev-ServerlessDeploymentBucketName"
       }
     ]

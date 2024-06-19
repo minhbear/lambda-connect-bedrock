@@ -169,7 +169,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambda-connect-bedrock/dev/1718732171319-2024-06-18T17:36:11.319Z/lambda-connect-bedrock.zip"
+          "S3Key": "serverless/lambda-connect-bedrock/dev/1718811509485-2024-06-19T15:38:29.485Z/lambda-connect-bedrock.zip"
         },
         "Handler": "handler.connect_bedrock",
         "Runtime": "python3.12",

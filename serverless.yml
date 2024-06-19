@@ -3,7 +3,7 @@ service: lambda-connect-bedrock
 provider:
   name: aws
   runtime: python3.12
-  region: ap-southeast-1
+  region: us-east-1
   timeout: 60
   iam:
     role:
