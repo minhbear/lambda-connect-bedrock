@@ -169,7 +169,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambda-connect-bedrock/dev/1718811509485-2024-06-19T15:38:29.485Z/lambda-connect-bedrock.zip"
+          "S3Key": "serverless/lambda-connect-bedrock/dev/1718820860369-2024-06-19T18:14:20.369Z/lambda-connect-bedrock.zip"
         },
         "Handler": "handler.connect_bedrock",
         "Runtime": "python3.12",
@@ -187,14 +187,14 @@
         "ConnectUnderscorebedrockLogGroup"
       ]
     },
-    "ConnectUnderscorebedrockLambdaVersionvOpEeEbmDDZVZ9Qedzj7NxSf8y56qqq90wpqBc": {
+    "ConnectUnderscorebedrockLambdaVersionHPMf33a8ttI2Rml7btWwUknYkPu1Gsuu4FBM3pr57k": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ConnectUnderscorebedrockLambdaFunction"
         },
-        "CodeSha256": "nd3JQOwUkf0MofU9KF9i7Q7g7lL1C3CC0hw2rkxojU8="
+        "CodeSha256": "b3cim41KuOBXDtXIU0rDktsJk6PvgSCfFjKvpOAWrX8="
       }
     }
   },
@@ -210,7 +210,7 @@
     "ConnectUnderscorebedrockLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ConnectUnderscorebedrockLambdaVersionvOpEeEbmDDZVZ9Qedzj7NxSf8y56qqq90wpqBc"
+        "Ref": "ConnectUnderscorebedrockLambdaVersionHPMf33a8ttI2Rml7btWwUknYkPu1Gsuu4FBM3pr57k"
       },
       "Export": {
         "Name": "sls-lambda-connect-bedrock-dev-ConnectUnderscorebedrockLambdaFunctionQualifiedArn"
