@@ -1,1 +1,1 @@
-from functions.connect_bedrock import connect_bedrock
+from functions.generate_response import handler
